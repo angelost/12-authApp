@@ -1,0 +1,89 @@
+consola
+
+npm install //instala las depencias que faltan en el proyecto
+npm start // iniciar proyecto tscript
+ng new ruta // crear proyecto angular
+ng serve -o // inicializa proyecto angular
+ctrl + c //bajar proyecto
+ng g m ruta // generar modulo
+ng g m appRouter --flat //generar modulo sin carpeta
+ng g c ruta --skip-tests // generar componente sin test
+ng g c ruta --skip-tests --inline-style // generar componente sin test y sin css
+ng g c ruta --skip-tests -s
+ng build --configuration production //generar version produccion
+ng g s ruta --skip-tests //genera un servicio sin test
+ng g p ruta --skip-tests // generar un pipe sin test
+ng g g ruta --skip-tests // generar un guard sin test
+ng g m --help // ayuda
+ng g m template --routing // genera el modulo de routing
+ng g d ruta --skip-tests // generar directiva sin test
+npm init // crear proyecto node
+
+npm i bcryptjs cors dotenv express express-validator jsonwebtoken mongoose
+bcryptjs: encriptacion de datos
+cors: necesario para peticiones de otros dominios
+dotenv: crear variables de entorno
+express: framework
+express-validator: validaciones de campos
+jsonwebtoken: permite generar tokens
+mongoose: orm para interactuar con mongo
+npm i express@4.17.1 // instalar paquete con version especifica
+
+npm run dev // levantar servidor node
+npm start // levantar servidor node pero sin los cambios inmediatos en el cmd
+
+codigo
+
+back tild ``: string multilinea
+[] : establecer un valor
+() : emitir un evento
+[()] : emitir y escuchar two way data bindig
+{{}}: imprimir objectos
+*ngIf: sirve para hacer condiciones en el html
+*ngIf-else : condicion con un sino en el html
+*ngFor: para generar ciclos en el html
+ng-template #name: para mostrar un template html
+FormsModule: modulo de herramientas para gestionar formulario normal
+ngSubmit: evento FormsMidulo para submit formulario
+[(ngModel)]: escuchar y emitir propiedad (two way data bindig)
+($event): para pasar un evento
+@Input: sirve para pasar parametros desde componentes padres a hijos
+@Output - EventEmitter: sirve para emitir eventos desde componentes hijos hacia padres
+@Injectable - decorador para  crear servicios
+*javascript todo lo manda por referencia
+spread: [...this.arreglo] (separa los elementos del arreglo y crea uno nuevo)
+@ViewChild('object') : obtener referencia a objetos html 
+@Injectable({ providedIn: 'root' }): se eleva el servicio a nivel global
+{{ item | titlecase }}: pipe de titulo capitalizado (pipe transforma a nivel visual en el template)
+Session Storage: si se cierra el navegador, se pierde la info
+Local Storafe: mantiene la info aunque se cierre el navegador
+JSON.stringify(this._historial): toma cualquier objeto y lo transforma en string
+pipes: es una tuberia por donde pasa info y se puede transformar
+switchMap: permite recibir un observable y retorna otro
+tap: para imprimir en consola la respuesta
+lazy load: carga perezoza. sirve para cargar componentes a demanda
+Guards: es un servicio sirve para implementar reglas de validacion en las rutas
+si se usa lazyLoad se debe utilizar CanLoad, de lo contrario solo usar el CanActivate
+
+Formulario Template: angular se encarga de manejar la mayor parte del formulario de manera automatica y las especificaciones de los detalle campos se hacen del lado del html (mayor parte de la logica se encuentra en html)
+
+Formulario Reactivo: procura el html sea lo mas basico posible y que todo el componente pesado este del lado de typescript ( se puede tener mas control del formulario)
+
+
+*los observables tienen mucho mas control que las promesas
+
+Hooks
+
+constructor: se utiliza inyecciones de dependencia (antes que el html sea construido)
+ngOnInit: salta una vez componente esta inicializado (ya tenemos acceso al html) ej http, traer info de servicio y llenar propiedades
+ngOnChanges: se dispara cada vez que cambia algo en el componente
+ngOnDestroy: se dispara cuando se elimina el componente
+
+.app-menu: . referencia a clase
+#app-menu:  # referencia a un id
+app-menu: busca etiqueta propia
+
+* diferencia entre pagina y componenntes, es que las paginas son para las rutas y los componenntes estan contenidos dentro de las paginas
+
+
+middleware: es una funcion que se ejecuta cuando el interprete pase evaluando cada una de las lineas de codigo
